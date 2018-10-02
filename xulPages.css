@@ -1,0 +1,165 @@
+@import url(icons.css);
+
+@-moz-document url("chrome://global/content/appPicker.xul"), url(chrome://mozapps/content/downloads/unknownContentType.xul), url("chrome://mozapps/content/handling/dialog.xul"), url-prefix("about:preferences"), url-prefix("about:support"), url("chrome://global/content/commonDialog.xul"), url("chrome://browser/content/places/bookmarkProperties.xul") {
+	button:not(.devtools-button):not(.devtools-tab):not(.expander-down):not(.expander-up):not(#identity-popup-security-expander):not(#identity-popup-clear-sitedata-button):not(#downloadsHistory):not(.accessory-button):not(.homepage-button):not(#fxaChangeDeviceName):not(.searchEngineAction):not(#restoreDefaultSearchEngines) {
+		-moz-appearance: none !important;
+		padding: 0px 20px !important;
+		background: #333333 !important;
+		border: 2px #9b9b9b solid !important;
+		color: white !important;
+	}
+	button:hover:not(.devtools-button):not(.devtools-tab):not(.expander-down):not(.expander-up):not(#identity-popup-security-expander):not(#identity-popup-clear-sitedata-button):not(#downloadsHistory):not(.accessory-button):not(#fxaChangeDeviceName):not(.searchEngineAction):not(#restoreDefaultSearchEngines) {
+		background: #545454 !important;
+	}
+	button:active:not(.devtools-button):not(.devtools-tab):not(.expander-down):not(.expander-up):not(#identity-popup-security-expander):not(#identity-popup-clear-sitedata-button):not(#downloadsHistory):not(.accessory-button):not(#fxaChangeDeviceName):not(.searchEngineAction):not(#restoreDefaultSearchEngines) {
+		background: #666666 !important;
+	}
+	button:focus:not(.devtools-button):not(.devtools-tab):not(.expander-down):not(.expander-up):not(#identity-popup-security-expander):not(#identity-popup-clear-sitedata-button):not(#downloadsHistory):not(.accessory-button):not(#fxaChangeDeviceName):not(.searchEngineAction):not(#restoreDefaultSearchEngines) {
+		border: 2px solid #ffffff !important;
+	}
+	checkbox > .checkbox-check {
+		-moz-appearance: none !important;
+		border: 1px solid #898989 !important;
+	}
+	checkbox:hover > .checkbox-check {
+		border-color: #797979 !important;
+	}
+	checkbox:active > .checkbox-check {
+		border-color: #9d9d9d !important;
+	}
+	.checkbox-check[checked="true"] {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAMAAACecocUAAAAJ1BMVEUICAgVFRUwMDBYWFhmZmZzc3OAgICOjo6bm5u2trbExMTR0dHe3t5hrUUYAAAAPElEQVR4AW3HQRKAMAhD0Q9osTb3P6/oDBunb5Mfdtxpdiu6L319GhxSAqlpLk1K1C4t45UqDn2CNgZ/D1J3AVk4gQ9aAAAAAElFTkSuQmCC) !important;
+	}
+	groupbox {
+		border-radius: 0 !important;
+		border: 0.5px solid #2b2b2b;
+		-moz-appearance: none !important;
+	}
+}
+
+
+
+
+
+@-moz-document url("chrome://global/content/appPicker.xul") {
+	#app-picker {
+		background-color: black !important;
+		color: white !important;
+	}
+}
+
+/*download*/
+@-moz-document url(chrome://mozapps/content/downloads/unknownContentType.xul) {
+	#unknownContentType {
+    	background-color: #191919 !important;
+    	color: #e0e0e0 !important;
+	}
+	caption {
+		background-color: #191919 !important;
+	}
+	menulist, textbox {
+		color: #e0e0e0 !important;
+	}
+}
+
+/*open with*/
+@-moz-document url("chrome://mozapps/content/handling/dialog.xul") {
+	#handling {
+		background-color: #191919 !important;
+		color: #e0e0e0 !important;
+	}
+	richlistbox {
+		background-color: #202020 !important;
+		border: 1px solid #2b2b2b !important;
+		-moz-appearance: none !important;
+	}
+	richlistitem {
+		color: #e0e0e0 !important;
+	}
+	richlistitem[selected="true"] {
+    	background: #333333 !important;
+    	color: #e0e0e0 !important;
+	}
+}
+@-moz-document url("chrome://global/content/commonDialog.xul") {
+	#commonDialog {
+		background-color: #191919 !important;
+	}
+	label, description {
+		color: #e0e0e0 !important;
+	}
+}
+@-moz-document url("chrome://browser/content/places/places.xul") {
+	#placesToolbar {
+		background-color: #202020 !important;
+		color: #e0e0e0 !important;
+		padding: 6px !important;
+		border-bottom: 1px solid #2b2b2b !important;
+	}
+	#placesMenu > menu {
+		color: #e0e0e0 !important;
+		padding: 2px 8px !important;
+	}
+	#placesList {
+		background: #191919 !important;
+		color: #e0e0e0 !important;
+	}
+	#detailsDeck {
+		background: #383838 !important;
+		color: #e0e0e0 !important;
+	}
+	#placeContent {
+		background: #191919 !important;
+		color: #e0e0e0 !important;
+	}
+	#placesView > splitter {
+		border-inline-end: 2px solid #2b2b2b !important;
+	}
+	richlistbox {
+		-moz-appearance: none !important;
+		background-color: #202020 !important;
+	}
+	richlistitem {
+		background-color: #202020 !important;
+		color: #e0e0e0 !important;
+		border-radius: 0 !important;
+		padding: 2px !important;
+	}
+	richlistitem:hover {
+		background-color: #444444 !important;
+	}
+	richlistitem:hover:active {
+		background-color: #555555 !important;
+	}
+	richlistitem[selected="true"] {
+		background-image: none !important;
+		background-clip: border-box !important;
+		outline: none !important;
+		background-color: #333333 !important;
+	}
+}
+@-moz-document url("chrome://browser/content/places/bookmarkProperties.xul") {
+	#bookmarkproperties {
+		background-color: #191919 !important;
+	}
+	label {
+		color: #e0e0e0 !important;
+	}
+}
+@-moz-document url("chrome://global/content/alerts/alert.xul") {
+	#alertBox {
+		box-shadow: none !important;
+		color: #e0e0e0 !important;
+		background-color: #1F1F1F !important;
+		border: 1px solid #1F1F1F !important;
+		border-radius: 0px !important;
+		margin-top: 4px !important;
+		margin-bottom: 4px !important;
+	}
+	#alertTitleLabel {
+		padding-top: 0px !important;
+	}
+	#alertNotification {
+		padding: 8px 20px 0px 0px !important;
+	}
+}

@@ -1,0 +1,194 @@
+@import url(xulPages.css);
+@import url(icons.css);
+
+/*//*NEW TAB PAGE/*/
+@-moz-document url("about:newtab") {
+	body {
+		background-color: #212121 !important;
+	}
+	/*search bar*/
+	.search-wrapper input {
+		background-color: #303030 !important;
+		border-radius: 0px !important;
+		border: 1px solid #484848 !important;
+	}
+	.fixed-search .search-wrapper {
+		background-color: #212121e6 !important;
+	}
+	/*top sites cards*/
+	#snippets-container {
+		background: #212121 !important;
+	}
+	#snippets-container .snippet .button-link {
+		background-color: #303030 !important;
+		border-radius: 0px !important;
+		border: 1px solid #484848 !important;
+	}
+	.top-site-outer .top-site-icon, .top-site-outer .screenshot {
+		background-color: #303030 !important;
+		border-radius: 0px !important;
+	}
+	.top-site-outer .tile {
+		border-radius: 0px !important;
+	}
+	.top-sites-list:not(.dnd-active) .top-site-outer:-moz-any(.active, :focus, :hover) .tile {
+		box-shadow: 0px 0px 15px 5px rgba(17,17,17,1) !important;
+	}
+	.top-site-outer .context-menu-button {
+		border: 1px solid #484848 !important;
+	}
+	/*collabsable sections*/
+	.collapsible-section.active {
+		background: #303030 !important;
+		border-radius: 0 !important;
+	}
+	/*context menus*/
+	.context-menu {
+		background: #2B2B2B !important;
+		border: 1px solid #A0A0A0 !important;
+		border-radius: 0 !important;
+	}
+	.context-menu > ul > li > a {
+		line-height: 18px !important;
+		font-size: 12px !important;
+		font-family: 'Segoe UI' !important;
+		padding-right: 70px !important;
+	}s
+	.context-menu > ul > li > a:-moz-any(:focus, :hover) {
+		background: #414141 !important;
+	}
+	.context-menu > ul > li.separator {
+		margin: 3px auto !important;
+		width: 94% !important;
+		border-bottom: 1px solid #a0a0a0 !important;
+	}
+	.card-outer .context-menu-button, .top-site-outer .context-menu-button {
+		background-color: #212121 !important;
+		border-color: #333 !important;
+	}
+	/*other cards*/
+	.card-outer {
+		background-color: #303030 !important;
+		border-radius: 0px !important;
+	}
+	.card-preview-image-outer {
+		border-radius: 0 !important;
+		background-color: #404040 !important;
+	}
+	.card-outer:-moz-any(:hover, :focus, .active):not(.placeholder) {
+		box-shadow: 0px 0px 15px 5px rgba(17,17,17,1) !important;
+	}
+	/*pocket disclaimer*/
+	.collapsible-section .section-disclaimer button {
+		-moz-appearance: none !important;
+		padding: 0px 20px !important;
+		background: #333333 !important;
+		border: 2px #9b9b9b solid !important;
+		color: white !important;
+		border-radius: 0 !important;
+	}
+	.collapsible-section .section-disclaimer button:hover {
+		background: #545454 !important;
+		box-shadow: none !important;
+	}
+	.collapsible-section .section-disclaimer button:active {
+		background: #666666 !important;
+	}
+	.collapsible-section .section-disclaimer button:focus {
+		border: 2px solid #ffffff !important;
+	}
+}
+@-moz-document url-prefix("about:preferences") {
+	:root {
+		--in-content-page-color: #e0e0e0 !important;
+		--in-content-page-background: #212121 !important;
+		--in-content-text-color: #e0e0e0 !important;
+		--in-content-selected-text: #000 !important;
+		--in-content-box-background: #303030 !important;
+		--in-content-box-background-hover: #404040 !important;
+		--in-content-box-background-active: #404040 !important;
+		--in-content-box-border-color: #484848 !important;
+		--in-content-category-text: #bdbdbd !important;
+	}
+	.header-name {
+		font-size: 1.5em !important;
+		font-weight: 400 !important;
+	}
+	xul|caption xul|label {
+		font-weight: 400 !important;
+	    font-size: 20px !important;
+	}
+	.checkbox-check {
+		border-radius: 0 !important;
+		box-shadow: none !important;
+		background: #212121 !important;
+	}
+	.checkbox-check[checked="true"] {
+		background: #212121 !important;
+	}
+	.checkbox-icon {
+		filter: invert(90%) !important;
+	}
+	menulist {
+		border-radius: 0 !important;
+	}
+	button {
+		-moz-appearance: none !important;
+		padding: 0px 20px !important;
+		background: #212121 !important;
+		border: 1px #484848 solid !important;
+		color: white !important;
+		border-radius: 0 !important;
+	}
+	button:hover {
+		background: #434343 !important;
+		box-shadow: none !important;
+	}
+	button:active {
+		background: #555555 !important;
+	}
+	button:focus {
+		border: 1px solid #707070 !important;
+	}
+	textbox {
+		border-radius: 0 !important;
+		background-color: #212121 !important;
+	}
+	.radio-check {
+		background: #212121 !important;
+		box-shadow: none !important;
+		border-color: #898989 !important;
+	}
+	.searchBarImage.searchBarShownImage, .searchBarHiddenImage {
+		filter: invert(90%) hue-rotate(180deg);
+	}
+}
+@-moz-document url-prefix("about:support") {
+	html {
+		background: #212121 !important;
+		color: #e0e0e0 !important;
+	}
+	h1 {
+		color: #e0e0e0 !important;
+	}
+	#action-box {
+		background: #242424 !important;
+		border: 2px solid #333333 !important;
+		color: #e0e0e0 !important;
+	}
+	button {
+		border-radius: 0 !important;
+	}
+	table {
+		background: #242424 !important;
+		color: #e0e0e0 !important;
+		border-color: #333 !important;
+	}
+	th, td {
+		border: none !important;
+	}
+	tr:hover {
+		background-color: #333 !important;
+	}
+}
+
