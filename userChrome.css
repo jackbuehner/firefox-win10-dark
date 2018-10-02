@@ -265,7 +265,20 @@ panelview {
     border: none;
     border-bottom: 1px solid #a0a0a0;
 }
-
+/*bottom browserbox*/
+#browser-bottombox {
+	background: #303030 !important;
+}
+notification {
+	background: none !important;
+}
+.messageImage {
+	filter: invert(100%);
+}
+notification {
+	color: #e0e0e0 !important;
+}
+/*----------*/
 
 
 
