@@ -359,6 +359,11 @@ toolbar .toolbarbutton-1:not([disabled="true"]):not([checked]):not([open]):not(:
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	padding: 11px !important;
 }
+#TabsToolbar .tabs-newtab-button > .toolbarbutton-icon, #new-tab-button > .toolbarbutton-icon, #alltabs-button > .toolbarbutton-icon {
+    padding: 6px !important;
+    height: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+}
 
 
 /*standard buttons*/
