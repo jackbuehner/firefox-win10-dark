@@ -137,7 +137,7 @@ menuitem[checked="true"][type="radio"] > .menu-iconic-left {
 	height: 17px !important;
 	border-radius: 100%;
 	background: white;
-	transform: scale(.5); 
+	transform: scale(.5);
 }
 menucaption {
 	background-color: transparent !important;
@@ -219,15 +219,28 @@ menupopup[touchmode] menuseparator, menupopup[touchmode] toolbarseparator{
 }
 #BMB_bookmarksPopup menupopup[placespopup="true"] > hbox {
 	border: none !important;
-	margin: 4px 2px 8px 2px !important;
-	background: #2B2B2B !important;
+  margin: 2px 0px 0px 0px !important;	background: #2B2B2B !important;
 	box-shadow: none !important;
-}
-.subviewbutton.panel-subview-footer {
-	background-color: #333333 !important;
 }
 #placesContext {
 	padding: 8px 2px 8px 2px !important;
+}
+/*----------*/
+/*history fixes*/
+#PanelUI-history > .panel-subview-body {
+    border: none !important;
+}
+#PanelUI-history {
+    border: 1px solid #A0A0A0 !important;
+}
+/*----------*/
+/*downloads panel*/
+.downloadsPanelFooterButton {
+    background-color: #2b2b2b !important;
+    min-height: 36px;
+}
+.downloadsPanelFooterButton:hover {
+    background-color: #414141 !important;
 }
 /*----------*/
 /*panel headers and footers*/
@@ -242,13 +255,23 @@ menupopup[touchmode] menuseparator, menupopup[touchmode] toolbarseparator{
 	transform: rotate(45deg) scale(0.25);
 	list-style-image: none !important;
 }*/
-.subviewbutton.panel-subview-footer {
-	border: 1px #A0A0A0 solid;
-	border-bottom: none;
-}
 .cui-widget-panelview menuitem.subviewbutton.panel-subview-footer {
     margin: 4px 8px 0px;
     border: none;
+}
+.subviewbutton.panel-subview-footer {
+    min-height: 24px !important;
+    margin: 4px 0 5px 0 !important;
+    background-color: #2b2b2b !important;
+}
+.subviewbutton.panel-subview-footer:hover {
+    background-color: #414141 !important;
+}
+.subviewbutton > .menu-accel-container > .menu-iconic-accel, .subviewbutton > .menu-accel-container > .menu-accel {
+    margin-inline-end: 1.35em !important;
+}
+.subviewbutton.panel-subview-footer > .menu-text {
+    padding-inline-start: 34px !important;
 }
 /*----------*/
 panel, #BMB_bookmarksPopup[side][animate="open"] {
