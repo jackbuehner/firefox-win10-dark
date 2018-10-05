@@ -22,14 +22,18 @@
 }
 /*navbar height*/
 #nav-bar {
-    height: 38px !important;
+    height: 42px !important;
 }
 /*url bar*/
 #urlbar {
-    height: 32px !important;
+    height: 34px !important;
     border: 1px solid #484848 !important;
     border-radius: 0px !important;
     background: #303030 !important;
+}
+:root[uidensity="compact"] .urlbar-icon {
+    width: 26px;
+    height: 26px;
 }
 /*remove active tab line*/
 #tabbrowser-tabs:-moz-lwtheme {
@@ -323,29 +327,29 @@ notification {
 
 
 
-
+/*:not(.tabs-newtab-button > .toolbarbutton-badge-stack)*/
 
 toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
     border-radius: 0 !important;
-    padding: 8px !important;
+    padding: 12px !important;
 }
 toolbar .toolbarbutton-1 > .toolbarbutton-icon {
     border-radius: 0 !important;
-	padding: 8px !important;
-    height: 32px !important;
-    width: 32px !important;
+	  padding: 12px !important;
+    height: 40px !important;
+    width: 40px !important;
 }
 toolbar .toolbarbutton-1:not([disabled="true"]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-badge-stack, toolbar .toolbarbutton-1:not([disabled="true"]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon {
 	background-color: rgba(255, 255, 255, 0.14) !important;
 	border: 1px solid rgba(255, 255, 255, 0.1);
-	padding: 7px !important;
+	padding: 11px !important;
 }
 .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :active) > .toolbarbutton-badge-stack, toolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :active) > .toolbarbutton-icon {
 	box-shadow: inset 0px -2px 0px 0px #0091FF;
 	transition: box-shadow 0.01s linear 0.1s;
 	background-color: rgba(255, 255, 255, 0.24) !important;
 	border: 1px solid rgba(255, 255, 255, 0.1);
-	padding: 7px !important;
+	padding: 11px !important;
 }
 
 
