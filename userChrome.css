@@ -335,7 +335,6 @@ notification {
 
 
 
-/*:not(.tabs-newtab-button > .toolbarbutton-badge-stack)*/
 
 toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
     border-radius: 0 !important;
@@ -360,9 +359,17 @@ toolbar .toolbarbutton-1:not([disabled="true"]):not([checked]):not([open]):not(:
 	padding: 11px !important;
 }
 #TabsToolbar .tabs-newtab-button > .toolbarbutton-icon, #new-tab-button > .toolbarbutton-icon, #alltabs-button > .toolbarbutton-icon {
-    padding: 6px !important;
-    height: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
-    width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+    padding: 10px !important;
+    height: calc(2 * var(--toolbarbutton-inner-padding) + 20px) !important;
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 20px) !important;
+}
+#TabsToolbar .tabs-newtab-button:not([disabled="true"]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon, #new-tab-button:not([disabled="true"]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon, #alltabs-button:not([disabled="true"]):not([checked]):not([open]):not(:active):hover > .toolbarbutton-icon {
+	padding: 9px !important;
+}
+#TabsToolbar .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :active) > .toolbarbutton-icon, #new-tab-button .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :active) > .toolbarbutton-icon, #alltabs-button .toolbarbutton-1:not([disabled="true"]):-moz-any([open], [checked], :active) > .toolbarbutton-icon {
+	box-shadow: none;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 9px !important;
 }
 
 
