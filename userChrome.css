@@ -311,7 +311,15 @@ notification {
 	color: #e0e0e0 !important;
 }
 /*----------*/
-
+/*urlbar dropdwon*/
+#PopupAutoCompleteRichResult, #PopupSearchAutoComplete {
+    background: #111 !important;
+    border-color: #111 !important;
+}
+.search-one-offs {
+    background: #000 !important;
+}
+/*----------*/
 
 
 
