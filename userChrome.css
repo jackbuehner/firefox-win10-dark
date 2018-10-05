@@ -391,7 +391,14 @@ toolbar .toolbarbutton-1:not([disabled="true"]):not([checked]):not([open]):not(:
 	border: 2px solid #ffffff !important;
 }
 
-
+/*remove reload/stop button animation*/
+.toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
+  animation-iteration-count: 0;
+}
+#reload-button > .toolbarbutton-animatable-box, #stop-button > .toolbarbutton-animatable-box {
+    margin-inline-start: calc((16px + 2 * var(--toolbarbutton-inner-padding) - 2px) / 2);
+}
+/*----------*/
 
 /* Copyright (c) 2017 Haggai Nuchi
 Available for use under the MIT License:
