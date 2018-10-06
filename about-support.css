@@ -1,0 +1,28 @@
+@-moz-document url-prefix("about:support") {
+	html {
+		background: #212121 !important;
+		color: #e0e0e0 !important;
+	}
+	h1 {
+		color: #e0e0e0 !important;
+	}
+	#action-box {
+		background: #242424 !important;
+		border: 2px solid #333333 !important;
+		color: #e0e0e0 !important;
+	}
+	button {
+		border-radius: 0 !important;
+	}
+	table {
+		background: #242424 !important;
+		color: #e0e0e0 !important;
+		border-color: #333 !important;
+	}
+	th, td {
+		border: none !important;
+	}
+	tr:hover {
+		background-color: #333 !important;
+	}
+}

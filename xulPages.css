@@ -1,4 +1,4 @@
-@import url(icons.css);
+@import url(resource/icons.css);
 
 @-moz-document url("chrome://global/content/appPicker.xul"), url(chrome://mozapps/content/downloads/unknownContentType.xul), url("chrome://mozapps/content/handling/dialog.xul"), url-prefix("about:preferences"), url-prefix("about:support"), url("chrome://global/content/commonDialog.xul"), url("chrome://browser/content/places/bookmarkProperties.xul") {
 	button:not(.devtools-button):not(.devtools-tab):not(.expander-down):not(.expander-up):not(#identity-popup-security-expander):not(#identity-popup-clear-sitedata-button):not(#downloadsHistory):not(.accessory-button):not(.homepage-button):not(#fxaChangeDeviceName):not(.searchEngineAction):not(#restoreDefaultSearchEngines) {

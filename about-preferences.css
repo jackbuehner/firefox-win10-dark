@@ -1,0 +1,54 @@
+@-moz-document url-prefix("about:preferences") {
+	.header-name {
+		font-size: 1.5em !important;
+		font-weight: 400 !important;
+	}
+	xul|caption xul|label {
+		font-weight: 400 !important;
+	    font-size: 20px !important;
+	}
+	.checkbox-check {
+		border-radius: 0 !important;
+		box-shadow: none !important;
+		background: #212121 !important;
+	}
+	.checkbox-check[checked="true"] {
+		background: #212121 !important;
+	}
+	.checkbox-icon {
+		filter: invert(90%) !important;
+	}
+	menulist {
+		border-radius: 0 !important;
+	}
+	button {
+		-moz-appearance: none !important;
+		padding: 0px 20px !important;
+		background: #212121 !important;
+		border: 1px #484848 solid !important;
+		color: white !important;
+		border-radius: 0 !important;
+	}
+	button:hover {
+		background: #434343 !important;
+		box-shadow: none !important;
+	}
+	button:active {
+		background: #555555 !important;
+	}
+	button:focus {
+		border: 1px solid #707070 !important;
+	}
+	textbox {
+		border-radius: 0 !important;
+		background-color: #212121 !important;
+	}
+	.radio-check {
+		background: #212121 !important;
+		box-shadow: none !important;
+		border-color: #898989 !important;
+	}
+	.searchBarImage.searchBarShownImage, .searchBarHiddenImage {
+		filter: invert(90%) hue-rotate(180deg);
+	}
+}

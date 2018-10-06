@@ -1,5 +1,5 @@
-@import url(xulPages.css);
-@import url(icons.css);
+/*@import url(xulPages.css);*/
+@import url(resource/icons.css);
 
 #TabsToolbar {
     background-color: #303030 !important;

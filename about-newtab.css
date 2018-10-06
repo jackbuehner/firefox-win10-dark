@@ -1,0 +1,101 @@
+/*//*NEW TAB PAGE/*/
+@-moz-document url("about:newtab") {
+	body {
+		background-color: #212121 !important;
+	}
+	/*search bar*/
+	.search-wrapper input {
+		background-color: #303030 !important;
+		border-radius: 0px !important;
+		border: 1px solid #484848 !important;
+		transition: 0.1s background;
+	}
+	.fixed-search .search-wrapper {
+		background-color: #212121e6 !important;
+	}
+	.search-wrapper .search-inner-wrapper {
+		transition: 0.1s height;
+	}
+	/*top sites cards*/
+	#snippets-container {
+		background: #212121 !important;
+	}
+	#snippets-container .snippet .button-link {
+		background-color: #303030 !important;
+		border-radius: 0px !important;
+		border: 1px solid #484848 !important;
+	}
+	.top-site-outer .top-site-icon, .top-site-outer .screenshot {
+		background-color: #303030 !important;
+		border-radius: 0px !important;
+	}
+	.top-site-outer .tile {
+		border-radius: 0px !important;
+	}
+	.top-sites-list:not(.dnd-active) .top-site-outer:-moz-any(.active, :focus, :hover) .tile {
+		box-shadow: 0px 0px 15px 5px rgba(17,17,17,1) !important;
+	}
+	.top-site-outer .context-menu-button {
+		border: 1px solid #484848 !important;
+	}
+	/*collabsable sections*/
+	.collapsible-section.active {
+		background: #303030 !important;
+		border-radius: 0 !important;
+	}
+	/*context menus*/
+	.context-menu {
+		background: #2B2B2B !important;
+		border: 1px solid #A0A0A0 !important;
+		border-radius: 0 !important;
+	}
+	.context-menu > ul > li > a {
+		line-height: 18px !important;
+		font-size: 12px !important;
+		font-family: 'Segoe UI' !important;
+		padding-right: 70px !important;
+	}s
+	.context-menu > ul > li > a:-moz-any(:focus, :hover) {
+		background: #414141 !important;
+	}
+	.context-menu > ul > li.separator {
+		margin: 3px auto !important;
+		width: 94% !important;
+		border-bottom: 1px solid #a0a0a0 !important;
+	}
+	.card-outer .context-menu-button, .top-site-outer .context-menu-button {
+		background-color: #212121 !important;
+		border-color: #333 !important;
+	}
+	/*other cards*/
+	.card-outer {
+		background-color: #303030 !important;
+		border-radius: 0px !important;
+	}
+	.card-preview-image-outer {
+		border-radius: 0 !important;
+		background-color: #404040 !important;
+	}
+	.card-outer:-moz-any(:hover, :focus, .active):not(.placeholder) {
+		box-shadow: 0px 0px 15px 5px rgba(17,17,17,1) !important;
+	}
+	/*pocket disclaimer*/
+	.collapsible-section .section-disclaimer button {
+		-moz-appearance: none !important;
+		padding: 0px 20px !important;
+		background: #333333 !important;
+		border: 2px #9b9b9b solid !important;
+		color: white !important;
+		border-radius: 0 !important;
+	}
+	.collapsible-section .section-disclaimer button:hover {
+		background: #545454 !important;
+		box-shadow: none !important;
+	}
+	.collapsible-section .section-disclaimer button:active {
+		background: #666666 !important;
+	}
+	.collapsible-section .section-disclaimer button:focus {
+		border: 2px solid #ffffff !important;
+	}
+}

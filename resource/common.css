@@ -1,0 +1,11 @@
+:root {
+  --in-content-page-color: #e0e0e0 !important;
+  --in-content-page-background: #212121 !important;
+  --in-content-text-color: #e0e0e0 !important;
+  --in-content-selected-text: #000 !important;
+  --in-content-box-background: #303030 !important;
+  --in-content-box-background-hover: #404040 !important;
+  --in-content-box-background-active: #404040 !important;
+  --in-content-box-border-color: #484848 !important;
+  --in-content-category-text: #bdbdbd !important;
+}
