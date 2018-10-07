@@ -237,6 +237,12 @@
 unused {
 	list-style-image: url(svg/chevronRight.svg) !important;
 }
+/*chevronRight12*/
+.more-recommendations::after {
+    background: none !important;
+    content: url(svg/chevronLeft12.svg) !important;
+    transform: rotate(180deg);
+}
 /*chevronLeft12*/
 .PanelUI-subView .subviewbutton-nav::after {
 	content: url(svg/chevronLeft12.svg) !important;
