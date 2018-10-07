@@ -53,7 +53,11 @@
 	}
   /*//navigation//*/
   .navigation {
+<<<<<<< HEAD
     background: #262626;
+=======
+    background: #212121;
+>>>>>>> bf5ac83207accaa6ce8778f33fdf0722636da7fe
   }
   #categories {
     width: 320px !important;
@@ -71,6 +75,7 @@
     #categories > .category, .help-button > .text-link {
       padding-inline-start: 13px !important;
       margin-inline-end: 33px !important;
+<<<<<<< HEAD
     }
     .help-button > .text-link {
       width: 0px !important;
@@ -78,6 +83,9 @@
     .main-content {
       padding-left: 28px !important;
     }
+=======
+  }
+>>>>>>> bf5ac83207accaa6ce8778f33fdf0722636da7fe
   }
   .category-icon {
     width: 16px !important;
