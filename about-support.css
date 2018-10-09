@@ -26,3 +26,7 @@
 		background-color: #333 !important;
 	}
 }
+:root {
+	--in-content-table-header-background: -moz-win-accentcolor !important;
+	--in-content-selected-text: -moz-win-accentcolortext !important;
+}

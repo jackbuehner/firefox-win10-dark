@@ -7,57 +7,18 @@
 		font-weight: 400 !important;
 	    font-size: 20px !important;
 	}
-	.checkbox-check {
-		border-radius: 0 !important;
-		box-shadow: none !important;
-		background: #212121 !important;
-	}
-	.checkbox-check[checked="true"] {
-		background: #212121 !important;
-	}
 	.checkbox-icon {
 		filter: invert(90%) !important;
 	}
-	menulist {
-		border-radius: 0 !important;
-	}
-	button {
-		-moz-appearance: none !important;
-		padding: 0px 20px !important;
-		background: #212121 !important;
-		border: 1px #484848 solid !important;
-		color: white !important;
-		border-radius: 0 !important;
-	}
-	button:hover {
-		background: #434343 !important;
-		box-shadow: none !important;
-	}
-	button:active {
-		background: #555555 !important;
-	}
-	button:focus {
-		border: 1px solid #707070 !important;
-	}
-	textbox {
-		border-radius: 0 !important;
-		background-color: #212121 !important;
-	}
-	.radio-check {
-		background: #212121 !important;
-		box-shadow: none !important;
-		border-color: #898989 !important;
+	hbox.button-box {
+		margin-top: -2px !important;
 	}
 	.searchBarImage.searchBarShownImage, .searchBarHiddenImage {
 		filter: invert(90%) hue-rotate(180deg);
 	}
   /*//navigation//*/
   .navigation {
-<<<<<<< HEAD
-    background: #262626;
-=======
-    background: #212121;
->>>>>>> bf5ac83207accaa6ce8778f33fdf0722636da7fe
+    background: #1f1f1f;
   }
   #categories {
     width: 320px !important;
@@ -75,7 +36,6 @@
     #categories > .category, .help-button > .text-link {
       padding-inline-start: 13px !important;
       margin-inline-end: 33px !important;
-<<<<<<< HEAD
     }
     .help-button > .text-link {
       width: 0px !important;
@@ -83,9 +43,6 @@
     .main-content {
       padding-left: 28px !important;
     }
-=======
-  }
->>>>>>> bf5ac83207accaa6ce8778f33fdf0722636da7fe
   }
   .category-icon {
     width: 16px !important;
@@ -100,8 +57,9 @@
     padding-inline-end: 14px;
     padding-inline-start: 14px;
   }
-  #categories > .category:hover, #categories > .category[selected]:hover, #categories > .category.selected:hover {
+  #categories > .category:hover, #categories > .category[selected]:hover, #categories > .category.selected:hover, .help-button > .text-link:hover {
     background-color: #363636 !important;
+		border-radius: 0 !important;
   }
   #categories > .category[selected]:hover:active, #categories > .category.selected:hover:active {
     background-color: #404040 !important;
@@ -110,6 +68,5 @@
   #categories > .category[selected], #categories > .category.selected {
     color: var(--in-content-category-text) !important;
   }
-
-
+  /*----------*/
 }

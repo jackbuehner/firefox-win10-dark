@@ -90,6 +90,9 @@
   list-style-image: url(svg/chevronDown16.svg) !important;
 	width: 16px;
 }
+dropmarker {
+	list-style-image: url(svg/chevronDown16.svg) !important;
+}
 .icon.icon-arrowhead-down-small, .icon.icon-arrowhead-forward-small, .icon.icon-arrowhead-down, .icon.icon-arrowhead-up {
 	background-image: url(svg/chevronDown16.svg) !important;
 }
@@ -139,6 +142,10 @@
 }
 #tracking-protection-icon-box[active], #tracking-protection-icon-box[hasException] {
 	visibility: collapse !important;
+}
+/*checkbox-check16*/
+.checkbox-check[checked] {
+	list-style-image: url(svg/check16.svg) !important;
 }
 /*home*/
 #category-home > .category-icon, #home-button {

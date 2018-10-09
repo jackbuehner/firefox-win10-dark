@@ -1,11 +1,148 @@
+/*include all about pages except
+devtools-toolbox
+addons
+newtab
+in order to avoid ui issues*/
+@-moz-document regexp("^about:(?!devtools-toolbox|addons|newtab| ).*") {
+  button, .private a.button {
+    min-height: 32px !important;
+    color: var(--in-content-text-color) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: var(--in-content-button-background) !important;
+    padding: 6px 27px !important;
+    transition: transform 0.5s, box-shadow 0s !important;
+  }
+  .private a.button {
+    background-color: #8000d7 !important;
+    min-height: 23px !important;
+  }
+  button.primary {
+    background-color: var(--in-content-primary-button-background) !important;
+    color: -moz-win-accentcolortext !important;
+  }
+  button:hover, .private a.button:hover {
+    box-shadow: inset 0 0 0 2px var(--in-content-button-hover-boxshadow) !important;
+  }
+  button:hover:active, .private a.button:hover:active {
+    transform: scale(0.96);
+    transition: transform 0s !important;
+    box-shadow: inset 0 0 0 20px var(--in-content-button-hover-boxshadow) !important;
+  }
+  button.primary:focus {
+    outline: none !important;
+  }
+  textbox, menulist {
+    border: 2px solid var(--in-content-box-border-color) !important;
+    min-height: 32px !important;
+    background-color: var(--in-content-page-background) !important;
+    border-radius: 0 !important;
+  }
+  textbox:hover, menulist:hover {
+    border: 2px solid var(--in-content-box-border-hover-color) !important;
+    background-color: var(--in-content-page-background) !important;
+  }
+  textbox:focus {
+    border: 2px solid var(--in-content-box-border-focus-color) !important;
+  }
+  menulist:-moz-focusring > .menulist-label-box {
+    outline: none !important;
+    border: none !important;
+  }
+  menupopup {
+    border: 1px solid var(--in-content-contextmenu-border-color) !important;
+  }
+  menupopup menuitem {
+    background-color: var(--in-content-contextmenu-background) !important;
+  }
+  menupopup menuitem:hover {
+    background-color: var(--in-content-contextmenu-background-hover) !important;
+  }
+  menupopup menuitem:not([disabled="true"])[selected="true"] {
+    background-color: var(--in-content-contextmenu-background-selected) !important;
+    color: -moz-win-accentcolortext !important;
+  }
+  dropmarker {
+    fill: var(--in-content-text-color) !important;
+    margin-inline-end: -2px !important;
+    padding: 7px !important;
+  }
+  .checkbox-check {
+		border-radius: 0 !important;
+		box-shadow: none !important;
+		background: var(--in-content-page-background) !important;
+    border: 2px solid var(--in-content-checkbox-border-color) !important;
+	}
+  .checkbox-check[checked] {
+    fill: -moz-win-accentcolortext !important;
+  }
+	.checkbox-check[checked="true"] {
+		background: var(--in-content-checkbox-background-checked) !important;
+    border-color: var(--in-content-checkbox-border-color-checked) !important;
+	}
+  checkbox:hover .checkbox-check {
+    border-color: var(--in-content-checkbox-border-hover-color) !important;
+  }
+  checkbox:active .checkbox-check[checked="true"], checkbox:active .checkbox-check {
+    background: var(--in-content-checkbox-background-pressed) !important;
+    border-color: var(--in-content-checkbox-border-pressed-color) !important;
+  }
+  .radio-check {
+		border-radius: 20 !important;
+		box-shadow: none !important;
+		background: var(--in-content-page-background) !important;
+    border: 2px solid var(--in-content-checkbox-border-color) !important;
+	}
+  .radio-check[selected] {
+    fill: #cccccc !important;
+  }
+	.radio-check[selected="true"] {
+    border-color: var(--in-content-checkbox-border-color-checked) !important;
+	}
+  radio:hover .radio-check {
+    border-color: var(--in-content-checkbox-border-hover-color) !important;
+  }
+  radio:hover .radio-check[selected="true"] {
+    border-color: var(--in-content-checkbox-border-color-checked) !important;
+    fill: #ffffff !important;
+  }
+  radio:active .radio-check[selected="true"], radio:active .radio-check {
+    fill: var(--in-content-checkbox-background-pressed) !important;
+    border-color: var(--in-content-checkbox-border-pressed-color) !important;
+  }
+}
 :root {
   --in-content-page-color: #e0e0e0 !important;
-  --in-content-page-background: #212121 !important;
+  --in-content-page-background: #111 !important;
   --in-content-text-color: #e0e0e0 !important;
   --in-content-selected-text: #000 !important;
   --in-content-box-background: #303030 !important;
   --in-content-box-background-hover: #404040 !important;
   --in-content-box-background-active: #404040 !important;
-  --in-content-box-border-color: #484848 !important;
+  --in-content-box-border-color: #666666 !important;
+  --in-content-box-border-hover-color: #999999 !important;
+  --in-content-box-border-focus-color: -moz-win-accentcolor !important;
+  --in-content-item-hover: #414141 !important;
+  --in-content-item-selected: -moz-win-accentcolor !important;
   --in-content-category-text: #bdbdbd !important;
+  --in-content-tab-color: #424f5a;
+  --in-content-link-color: -moz-win-accentcolor !important;
+  --in-content-link-color-hover: #777777 !important;
+  --in-content-link-color-active: #505050 !important;
+  --in-content-link-color-visited: -moz-win-accentcolor !important;
+  --in-content-primary-button-background: -moz-win-accentcolor !important;
+  --in-content-primary-button-background-hover: -moz-win-accentcolor !important;
+  --in-content-primary-button-background-active: -moz-win-accentcolor !important;
+  --in-content-button-background: #333333 !important;
+  --in-content-button-hover-boxshadow: rgba(255, 255, 255, 0.4) !important;
+  --in-content-contextmenu-border-color: #a0a0a0 !important;
+  --in-content-contextmenu-background: #2b2b2b !important;
+  --in-content-contextmenu-background-hover: #414141 !important;
+  --in-content-contextmenu-background-selected: -moz-win-accentcolor !important;
+  --in-content-checkbox-background-checked: -moz-win-accentcolor !important;
+  --in-content-checkbox-background-pressed: #cccccc !important;
+  --in-content-checkbox-border-color: #cccccc !important;
+  --in-content-checkbox-border-color-checked: -moz-win-accentcolor !important;
+  --in-content-checkbox-border-hover-color: #ffffff !important;
+  --in-content-checkbox-border-pressed-color: #cccccc !important;
 }
