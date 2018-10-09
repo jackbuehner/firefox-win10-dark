@@ -90,7 +90,7 @@
   list-style-image: url(svg/chevronDown16.svg) !important;
 	width: 16px;
 }
-dropmarker {
+dropmarker, .treecol-sortdirection[sortDirection] {
 	list-style-image: url(svg/chevronDown16.svg) !important;
 }
 .icon.icon-arrowhead-down-small, .icon.icon-arrowhead-forward-small, .icon.icon-arrowhead-down, .icon.icon-arrowhead-up {

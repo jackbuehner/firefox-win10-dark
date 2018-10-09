@@ -110,20 +110,36 @@ in order to avoid ui issues*/
     fill: var(--in-content-checkbox-background-pressed) !important;
     border-color: var(--in-content-checkbox-border-pressed-color) !important;
   }
+  richlistbox, tree {
+    border-radius: 0 !important;
+    border-width: 2px !important;
+  }
+  listheader, treecols {
+    border-bottom-width: 2px !important;
+  }
+  .treecol-sortdirection[sortDirection] {
+    width: 12px !important;
+    height: 12px !important;
+    fill: #808080 !important;
+  }
+  .tree-columnpicker-icon {
+    filter: invert(60%);
+  }
 }
 :root {
   --in-content-page-color: #e0e0e0 !important;
   --in-content-page-background: #111 !important;
   --in-content-text-color: #e0e0e0 !important;
   --in-content-selected-text: #000 !important;
-  --in-content-box-background: #303030 !important;
-  --in-content-box-background-hover: #404040 !important;
-  --in-content-box-background-active: #404040 !important;
+  --in-content-box-background: #111 !important;
+  --in-content-box-background-hover: #212121 !important;
+  --in-content-box-background-active: #212121 !important;
   --in-content-box-border-color: #666666 !important;
   --in-content-box-border-hover-color: #999999 !important;
   --in-content-box-border-focus-color: -moz-win-accentcolor !important;
-  --in-content-item-hover: #414141 !important;
+  --in-content-item-hover: rgba(255,255,255,0.1) !important;
   --in-content-item-selected: -moz-win-accentcolor !important;
+  --in-content-border-color: var(--in-content-box-border-color) !important;
   --in-content-category-text: #bdbdbd !important;
   --in-content-tab-color: #424f5a;
   --in-content-link-color: -moz-win-accentcolor !important;
