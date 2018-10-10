@@ -22,7 +22,7 @@
   #header-utils-btn {
     fill: #ababab !important;
   }
-  dropmarker {
+  .header-button dropmarker {
     padding: 2px !important;
   }
   menuitem[type="checkbox"] > .menu-iconic-left, menuitem[checked="true"] > .menu-iconic-left {
