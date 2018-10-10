@@ -119,4 +119,13 @@
   a:not(.Button--action):active {
     color: var(--in-content-link-color-active) !important;
   }
+  .Switch input + label {
+    background: none !important;
+  }
+  .Switch.Switch--success input + label::before, .Switch input:checked + label::before {
+    background-color: -moz-win-accentcolor !important;
+  }
+  .Switch input:checked + label {
+    border-color: -moz-win-accentcolor !important;
+  }
 }
