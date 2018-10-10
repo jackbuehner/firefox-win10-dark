@@ -28,6 +28,9 @@
   menuitem[type="checkbox"] > .menu-iconic-left, menuitem[checked="true"] > .menu-iconic-left {
     -moz-appearance: none !important;
   }
+  richlistbox.list > richlistitem.addon {
+    border-color: #333 !important;
+  }
   /*alert box*/
   .alert {
     border-radius: 0 !important;
