@@ -214,6 +214,7 @@ in order to avoid ui issues*/
   --in-content-box-border-focus-color: -moz-win-accentcolor !important;
   --in-content-item-hover: rgba(255,255,255,0.1) !important;
   --in-content-item-selected: -moz-win-accentcolor !important;
+  --in-content-border-focus: -moz-win-accentcolor !important;
   --in-content-border-color: var(--in-content-box-border-color) !important;
   --in-content-category-text: #bdbdbd !important;
   --in-content-tab-color: #424f5a;
