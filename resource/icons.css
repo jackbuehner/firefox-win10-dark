@@ -10,7 +10,7 @@
 	background-image: url(svg/forward16.svg) !important;
 }
 /*settings*/
-#alertSettings, #appMenu-preferences-button, #category-general > .category-icon, .identity-popup-preferences-button, .search-setting-button-compact > .button-box > .button-icon, .tab-icon-image[src="chrome://browser/skin/settings.svg"], #preferences-button {
+#alertSettings, #appMenu-preferences-button, #category-general > .category-icon, .identity-popup-preferences-button, .search-setting-button-compact > .button-box > .button-icon, .tab-icon-image[src="chrome://browser/skin/settings.svg"], #preferences-button, #header-utils-btn {
 	list-style-image: url(svg/settings.svg) !important;
 }
 .icon.icon-settings {

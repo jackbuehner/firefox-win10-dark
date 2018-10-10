@@ -3,8 +3,8 @@ devtools-toolbox
 addons
 newtab
 in order to avoid ui issues*/
-@-moz-document regexp("^about:(?!devtools-toolbox|addons|newtab| ).*") {
-  button, .private a.button {
+@-moz-document regexp("^about:(?!devtools-toolbox|newtab| ).*") {
+  button:not(.button-link), .private a.button {
     min-height: 32px !important;
     color: var(--in-content-text-color) !important;
     border: none !important;
@@ -21,10 +21,10 @@ in order to avoid ui issues*/
     background-color: var(--in-content-primary-button-background) !important;
     color: -moz-win-accentcolortext !important;
   }
-  button:hover, .private a.button:hover {
+  button:not(.button-link):hover, .private a.button:hover {
     box-shadow: inset 0 0 0 2px var(--in-content-button-hover-boxshadow) !important;
   }
-  button:hover:active, .private a.button:hover:active {
+  button:not(.button-link):hover:active, .private a.button:hover:active {
     transform: scale(0.96);
     transition: transform 0s !important;
     box-shadow: inset 0 0 0 20px var(--in-content-button-hover-boxshadow) !important;
@@ -124,6 +124,78 @@ in order to avoid ui issues*/
   }
   .tree-columnpicker-icon {
     filter: invert(60%);
+  }
+  menupopup {
+  	-moz-appearance: none !important;
+  	padding: 4.5px 2px 4.5px 2px !important;
+  	background-color: #2B2B2B !important;
+  	border: 1px #A0A0A0 solid !important;
+  	min-width: 268px !important;
+  }
+  menuseparator, toolbarseparator {
+  	-moz-appearance: none !important;
+  	border: none !important;
+  	padding: .5px 0px .5px 0px !important;
+  	margin: 2px 8px 2px 8px !important;
+  	background-color: #808080 !important;
+  }
+  menuitem, menu {
+  	-moz-appearance: none !important;
+  	color: white !important;
+  	padding: 4px 0px 4px 0px !important;
+  }
+  menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
+  	color: gray !important;
+  }
+  menuitem:hover, menu:hover, menu[open="true"], menuitem[_moz-menuactive="true"]	 {
+  	-moz-appearance: none !important;
+  	padding: 4px 0px 4px 0px !important;
+  	background-color: #414141 !important;
+  }
+  menugroup {
+  	padding: 0px !important;
+  	background-color: transparent !important;
+  }
+  menuitem > .menu-text, menuitem > .menu-iconic-text {
+  	color: white !important;
+  }
+  menuitem[type="checkbox"] {
+  	padding-left: 8px !important;
+  	padding-top: 4px !important;
+  	padding-bottom: 4px !important;
+  }
+  menuitem[type="radio"] {
+  	padding-left: 8px !important;
+  	padding-top: 4px !important;
+  	padding-bottom: 4px !important;
+  }
+  menuitem[type="checkbox"] > .menu-iconic-text, menuitem[type="radio"] > .menu-iconic-text {
+  	padding-left: 5px !important;
+  }
+  menuitem[checked="true"][type="checkbox"] > .menu-iconic-left {
+  	padding: 7px 0px 0px 0px !important;
+  	border: solid white;
+  	border-width: 0 0 2px 2px;
+  	transform: rotate(-45deg) scale(.75);
+  	margin-bottom: 4px !important;
+  }
+  menuitem[checked="true"][type="radio"] > .menu-iconic-left {
+  	padding: 1px !important;
+  	border: solid white;
+  	height: 17px !important;
+  	border-radius: 100%;
+  	background: white;
+  	transform: scale(.5);
+  }
+  menucaption {
+  	background-color: transparent !important;
+  	color: white !important;
+  }
+  #ContentSelectDropdown > menupopup {
+  	background-image: none !important;
+  }
+  #ContentSelectDropdown {
+  	padding: 0px !important;
   }
 }
 :root {

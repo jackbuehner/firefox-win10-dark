@@ -1,0 +1,77 @@
+@-moz-document url-prefix("about:addons") {
+  /*sidepanel*/
+  #categories {
+    width: 320px !important;
+    background: #1f1f1f !important;
+    border-width: 0 !important;
+  }
+  /*addons overview*/
+  #addon-list {
+    border-width: 0 !important;
+  }
+  .header-button {
+    border: 2px solid var(--in-content-box-border-color) !important;
+    min-height: 32px !important;
+    background-color: var(--in-content-page-background) !important;
+    border-radius: 0 !important;
+  }
+  .header-button:not([disabled="true"]):hover, #header-utils-btn:not([disabled="true"]):hover {
+    border: 2px solid var(--in-content-box-border-hover-color) !important;
+    background-color: var(--in-content-page-background) !important;
+  }
+  #header-utils-btn {
+    fill: #ababab !important;
+  }
+  dropmarker {
+    padding: 2px !important;
+  }
+  menuitem[type="checkbox"] > .menu-iconic-left, menuitem[checked="true"] > .menu-iconic-left {
+    -moz-appearance: none !important;
+  }
+  /*alert box*/
+  .alert {
+    border-radius: 0 !important;
+  }
+  /*addon options*/
+  .detail-row, .detail-row-complex {
+    text-shadow: none !important;
+  }
+  .detail-view-container {
+    color: var(--in-content-text-color) !important;
+  }
+  /*tab*/
+  #categories > .category {
+    border-left: 4px solid transparent;
+    margin-inline-start: 0px !important;
+    color: var(--in-content-text-color) !important;
+  }
+  #categories > .category[selected="true"] {
+		border-left: 4px solid rgb(125,185,153);
+    border-image: linear-gradient(to bottom, rgba(108,219,141,0) 29%,-moz-win-accentcolor 29%,-moz-win-accentcolor 73%,rgba(108,219,141,0) 73%);
+    border-image-slice: 1;
+	}
+  #categories > .category:hover {
+    background-color: #363636 !important;
+		border-radius: 0 !important;
+  }
+  #categories > .category:hover:active {
+    background-color: #404040 !important;
+		border-radius: 0 !important;
+  }
+  .category-icon {
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 4px 0 0;
+  }
+  .category-name {
+    font-weight: 500 !important;
+  }
+  @media (max-width: 1050px) {
+    #categories {
+      width: 47px !important;
+    }
+    #categories > scrollbox {
+      overflow: hidden !important;
+    }
+  }
+}
