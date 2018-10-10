@@ -4,7 +4,7 @@ addons
 newtab
 in order to avoid ui issues*/
 @-moz-document regexp("^about:(?!devtools-toolbox|newtab| ).*") {
-  button:not(.button-link), .private a.button {
+  button:not(.button-link, close-icon), .private a.button {
     min-height: 32px !important;
     color: var(--in-content-text-color) !important;
     border: none !important;
@@ -21,10 +21,10 @@ in order to avoid ui issues*/
     background-color: var(--in-content-primary-button-background) !important;
     color: -moz-win-accentcolortext !important;
   }
-  button:not(.button-link):hover, .private a.button:hover {
+  button:not(.button-link, close-icon):hover, .private a.button:hover {
     box-shadow: inset 0 0 0 2px var(--in-content-button-hover-boxshadow) !important;
   }
-  button:not(.button-link):hover:active, .private a.button:hover:active {
+  button:not(.button-link, close-icon):hover:active, .private a.button:hover:active {
     transform: scale(0.96);
     transition: transform 0s !important;
     box-shadow: inset 0 0 0 20px var(--in-content-button-hover-boxshadow) !important;
@@ -238,4 +238,6 @@ in order to avoid ui issues*/
   --in-content-checkbox-border-hover-color: #ffffff !important;
   --in-content-checkbox-border-pressed-color: #cccccc !important;
   --info-box-background-color: #212121 !important;
+  --modal-background: #111111;
+  --modal-border-color: -moz-win-accentcolor;
 }

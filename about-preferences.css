@@ -78,4 +78,19 @@
     color: var(--in-content-category-text) !important;
   }
   /*----------*/
+  /*//dialog box//*/
+  .dialogBox {
+    background-color: var(--modal-background) !important;
+    border-color: var(--modal-border-color) !important;
+    color: var(--in-content-category-text) !important;
+  }
+  .dialogBox > .groupbox-title {
+    background-color: var(--modal-background) !important;
+    border-bottom: none !important;
+  }
+  .prefwindow[type="child"] {
+    background: var(--modal-background) !important;
+  }
+
+	/*----------*/
 }
