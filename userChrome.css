@@ -118,13 +118,13 @@ menuitem > .menu-text, menuitem > .menu-iconic-text {
 }
 menuitem[type="checkbox"] {
 	padding-left: 8px !important;
-	padding-top: 6.5px !important;
-	padding-bottom: 6.5px !important;
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
 }
 menuitem[type="radio"] {
 	padding-left: 8px !important;
-	padding-top: 6.5px !important;
-	padding-bottom: 6.5px !important;
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
 }
 menuitem[type="checkbox"] > .menu-iconic-text, menuitem[type="radio"] > .menu-iconic-text {
 	padding-left: 5px !important;
@@ -201,6 +201,10 @@ menupopup[touchmode] menuitem {
 }
 menupopup[touchmode] menuseparator, menupopup[touchmode] toolbarseparator{
 	margin: 4px 8px 4px 8px !important;
+}
+menupopup[touchmode] menuitem[type="checkbox"], menupopup[touchmode] menuitem[type="radio"] {
+  padding-top: 6.5 !important;
+  padding-bottom: 6.5 !important;
 }
 /*requests and bookmarks fixes*/
 .panel-arrowcontent {
