@@ -197,6 +197,9 @@ in order to avoid ui issues*/
   #ContentSelectDropdown {
   	padding: 0px !important;
   }
+  a, .text-link, .button-link {
+    text-decoration: none !important;
+  }
 }
 :root {
   --in-content-page-color: #e0e0e0 !important;
