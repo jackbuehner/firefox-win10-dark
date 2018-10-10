@@ -237,4 +237,5 @@ in order to avoid ui issues*/
   --in-content-checkbox-border-color-checked: -moz-win-accentcolor !important;
   --in-content-checkbox-border-hover-color: #ffffff !important;
   --in-content-checkbox-border-pressed-color: #cccccc !important;
+  --info-box-background-color: #212121 !important;
 }
