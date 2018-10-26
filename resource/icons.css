@@ -147,6 +147,9 @@ dropmarker, .treecol-sortdirection[sortDirection] {
 .checkbox-check[checked] {
 	list-style-image: url(svg/check16.svg) !important;
 }
+input[type="checkbox"]:checked {
+	background-image: url(svg/check16.svg) !important;
+}
 /*home*/
 #category-home > .category-icon, #home-button {
 	list-style-image: url(svg/home.svg) !important;

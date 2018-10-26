@@ -5,3 +5,9 @@
 @import url(about-preferences.css);
 @import url(about-support.css);
 @import url(about-addons.css);
+
+@-moz-document url-prefix("about:support") {
+  #reportBox, html.textarea {
+    border-radius: none;
+  }
+}

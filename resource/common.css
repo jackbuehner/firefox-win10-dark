@@ -67,25 +67,28 @@ in order to avoid ui issues*/
     margin-inline-end: -2px !important;
     padding: 7px !important;
   }
-  .checkbox-check {
+  .checkbox-check, input[type="checkbox"] {
 		border-radius: 0 !important;
 		box-shadow: none !important;
 		background: var(--in-content-page-background) !important;
     border: 2px solid var(--in-content-checkbox-border-color) !important;
 	}
-  .checkbox-check[checked] {
+  .checkbox-check[checked], input[type="checkbox"]:checked {
     fill: -moz-win-accentcolortext !important;
   }
-	.checkbox-check[checked="true"] {
+	.checkbox-check[checked="true"], input[type="checkbox"]:checked {
 		background: var(--in-content-checkbox-background-checked) !important;
     border-color: var(--in-content-checkbox-border-color-checked) !important;
 	}
-  checkbox:hover .checkbox-check {
+  checkbox:hover .checkbox-check, input[type="checkbox"]:not(:disabled):hover {
     border-color: var(--in-content-checkbox-border-hover-color) !important;
   }
-  checkbox:active .checkbox-check[checked="true"], checkbox:active .checkbox-check {
+  checkbox:active .checkbox-check[checked="true"], checkbox:active .checkbox-check, input[type="checkbox"]:not(:disabled):checked:active {
     background: var(--in-content-checkbox-background-pressed) !important;
     border-color: var(--in-content-checkbox-border-pressed-color) !important;
+  }
+  input[type="checkbox"]:checked {
+  	background-image: url(svg/check16.svg) !important;
   }
   .radio-check {
 		border-radius: 20 !important;
