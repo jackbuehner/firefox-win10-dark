@@ -82,11 +82,19 @@ menuseparator {
 	border: none !important;
 }*/
 
+menu > menupopup > arrowscrollbox, menu > menupopup > hbox > arrowscrollbox, toolbarbutton > menupopup > arrowscrollbox {
+  margin-top: -100px;
+  transition: margin-top 0.3s cubic-bezier(0.1 , 0.9 , 0.2 , 1);
+}
+menu[open="true"] > menupopup > arrowscrollbox, menu[open="true"] > menupopup > hbox > arrowscrollbox, toolbarbutton[open="true"] > menupopup > arrowscrollbox {
+  margin-top: 0px;
+  transition: margin-top 0.3s cubic-bezier(0.1 , 0.9 , 0.2 , 1);
+}
 menupopup, .panel-subview-body {
 	-moz-appearance: none !important;
-	padding: 4.5px 2px 4.5px 2px !important;
+	/*! padding: 4.5px 2px 4.5px 2px !important; */
 	background-color: #2B2B2B !important;
-	border: 1px #A0A0A0 solid !important;
+	/*! border: 1px #A0A0A0 solid !important; */
 	min-width: 268px !important;
 }
 menuseparator, toolbarseparator {
